@@ -1,0 +1,120 @@
+// Variables
+$bg-color: #ffffff;
+$text-dark: #1a1e24;
+$text-muted: #666666;
+$row-bg-even: #f4f6f8;
+$accent-teal: #6b8e8e; // For the navigation arrows
+$font-family: 'Inter', 'Segoe UI', sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $bg-color;
+  color: $text-dark;
+}
+
+.vehicle-card {
+  display: flex;
+  gap: 60px; // Increased gap to match the first image
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start; // Keeps the table at the top
+
+  .visual-section {
+    flex: 1.5; // Give the car more room
+    display: flex;
+    flex-direction: column;
+  }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+    
+    .thumbnail-strip {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      
+      .thumb {
+        width: 16.66%;
+        border: 1px solid #ddd;
+        padding: 5px;
+        cursor: pointer;
+        float: left;
+        &.active { border-color: $accent-teal; background: #eee; }
+      }
+    }
+  }
+
+  .details-section {
+    position: absolute;
+    right: 150px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid green;
+  }
+
+.specs-header {
+  margin-bottom: 20px;
+  h1 { font-size: 24px; font-weight: 700; margin: 0; }
+  p { font-size: 14px; color: $text-muted; }
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  height: 120px;
+  border: 3px solid green;
+}
+
+.specs-table {
+  width: 100%;
+  margin-top: 20px;
+
+  .spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px; // Slightly more padding for readability
+    font-size: 14px;
+    border-bottom: 1px solid #eee; // Subtle divider
+
+    &:nth-child(even) {
+      background-color: $row-bg-even;
+    }
+
+    .label {
+      font-weight: 600;
+      color: $text-muted;
+    }
+
+    .value {
+      font-weight: 500;
+      color: $text-dark;
+    }
+  }
+
+.div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+.div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+.div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+}

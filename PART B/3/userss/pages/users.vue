@@ -1,5 +1,12 @@
+<template>
+  <div>
+    <h1>User Directory</h1>
+    <UserList :users="mockData" />
+  </div>
+</template>
+
 <script>
-import UserList from '~/components/UserList.vue';
+import UserList from '~/components/userList.vue';
 
 export default {
   components: {
